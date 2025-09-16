@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EASYEAR - Home</title>
+        <style>
+
+            html, body 
+            {
+                margin: 0;
+                padding: 0;
+            }
+
+            nav
+            {
+               display:flex;
+               box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+
+            .Nome{
+                /*Esse é o nome que aparece no canto superior da tela, com, provavelmente, o nome da marca */
+                font-size: 26px;
+                position: relative;
+                top: 15px;
+                margin-left: 25px;
+            }
+
+            .nav
+            {
+                background-color: white;
+            }
+
+            a:hover
+            {
+                text-decoration: underline;
+                color: rgb(89, 89, 255);
+            }
+
+            .navlist
+            {
+                text-decoration: none;
+                font-size: 20px;
+                color: black;
+                font-family: georgia;
+                display: flex;
+                padding: 9px;
+                position: relative;
+                left: 1070px;
+                top: -39px;
+                float: left;
+            }
+
+            .anunciocentral /*PARA O PRO3 DO MEIO DA PAGINA, INCLUINDO A ID DE IMAGEMCENTRAL ABAIXO*/
+            {
+                position: relative;
+                text-align: center;         /* Centraliza o texto dentro do bloco */
+                margin-left: 520px;
+                top: -150px;
+                text-align: center;
+            }
+
+            
+            .anunciocentral1 /*PARA O PRO3 DO MEIO DA PAGINA, INCLUINDO A ID DE IMAGEMCENTRAL ABAIXO*/
+            {
+                position: relative;
+                text-align: center;         /* Centraliza o texto dentro do bloco */
+                margin-left: 600px;
+                top: -150px;
+                font-family: Times New Roman;
+            }
+
+            #destaque
+            {
+                color: rgb(212, 7, 7);
+                font-weight: bold;
+            }
+
+            #destaq
+            {
+                color: rgb(41, 108, 163);
+                font-weight: bold;
+            }
+            #imagemcentral
+            {
+                position: relative;
+                left: 380px;
+                top: 120px;
+                height: 250px;
+                width: 340px;
+                border-radius: 26px;
+            }
+
+            #template
+            {
+                width: 1350px;
+                height: 280px;
+/**/
+
+            }
+
+            #img1
+            {
+                width: 60%;
+                height: 170px;
+                border-radius: 10px;
+                position: relative;
+                right: 200px;
+                bottom: -198px;
+            }
+
+            #img2
+            {
+                width: 14%;
+                height: 170px;
+                border-radius: 10px;
+                position: relative;
+                margin-left: 20px;
+            }
+
+            #img3
+            {
+                width: 26%;
+                height: 176px;
+                border-radius: 10px;
+                position: relative;
+                right: 215px;
+                bottom: -200px;
+            }
+
+            .letragrossa
+            {
+                font-weight:bold;
+            }
+
+            .divisao1
+            {
+                margin-left: 240px;
+                position: relative;
+                top: -199px;
+                font-size: 17px;
+            }
+
+            .h1menor
+            {
+                font-size: 24px;
+            }
+
+            .divisao2
+            {
+                margin-left: 720px;
+                position: relative;
+                top: -606px;
+                font-size: 17px;
+            }
+
+            .divisao3
+            {
+                margin-left: 1180px;
+                position: relative;
+                top: -988px;
+                font-size: 17px; 
+            }
+
+            .botao1
+            {
+                position: relative;
+                top: -970px;
+                margin-left: 55px;
+            }
+
+            .botao2
+            {
+                position: relative;
+                top: -970px;
+                margin-left: 352px;
+            }
+
+            .botao3
+            {
+                position: relative;
+                top: -970px;
+                margin-left: 337px;
+            }
+
+            #botaobonito
+            {
+                border-radius: 20px;
+                background: linear-gradient(to left, rgb(253, 255, 255), rgb(171, 174, 204));
+                padding: 10px;
+                font-weight: bold;
+                color: rgb(51, 9, 85);
+                border-color: rgb(30, 16, 82);
+                cursor: pointer;
+                transition: background-color 2s ease;
+            }
+
+            #botaobonito:hover
+            {
+                background: linear-gradient(to left, rgb(239, 255, 150), rgb(250, 207, 116));
+                border-color: yellow;
+                color: rgb(134, 12, 8);
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <h1 class="Nome"><sup>EASY</sup></h1>
+
+        <nav class="nav">
+            <a href="https://biblia.com/" class="navlist" style="color: rgb(21, 206, 212);">Home</a>
+
+            <a href="https://www.linkedin.com/" class="navlist">Products</a>
+
+            <a href="https://www.youtube.com/" class="navlist">About</a>
+
+            <a href="https://www.facebook.com/" class="navlist">FAC</a>
+
+            <a href="https://x.com/" class="navlist">My Profile</a>
+        </nav>
+
+
+    <!--AGORA AQUI ESTÃO OS PRODUTOS-->
+        <img src="https://tse1.mm.bing.net/th/id/OIP.dPgi5JgxJpvCaIUnfHlywgHaEK?r=0&cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" title="BUY NOW" alt="Promocao" id="imagemcentral"></img> <!--O PRO 3 NO MEIO DA TELA-->
+        <h1 class="anunciocentral">NEW EASY <br> TECHNOLOGY</h1>
+        <p class="anunciocentral" style="font-weight: bold; font-size: 20px;">A <span id="destaque">inovação</span> que trará <span id="destaq">conforto</span><br>a sua vida auditiva</p>
+        <p class="anunciocentral1">Com o nosso novo <span id="destaque">IPod 3</span>, com tecnologia de ponta e participação de profissionais,<br> damos uma <span id="destaq">melhor qualidade</span>
+        ao som e como ele é transmitido em nosssos aparelhos,<br> não há mais razões para não ouvir em nossos fones, já que com a presença de certos<br> microtransmissores,
+        seus canais auditivos, danificados ou não, terão a experiência<br> de uma <span id="destaq">boa música utilizando nosso produto.</span></p>
+        <!--    AQUI O BOTÃO PARA LEVAR PARA A PAGINA DETALHADA, então é só botar o link por esse botão
+        <a href="">
+            <button></button>
+        </a>
+    -->
+
+        
+        <img id="img2" src="https://tse1.mm.bing.net/th/id/OIP.4mNQDEQHDNUd6pU9AjnLCgHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" title="Easy Pro2" alt="Opçao1 So os fone"></img> <!--A partir daqui são os 3 produtos principais-->
+        
+        <div class="divisao1">
+
+        <h1>EasyPods 2</h1>
+        <p class="letragrossa">o começo da <span id="destaq">EVOLUÇÃO</span></p>
+        <h1 class="h1menor">Versão light,<br> sem carregador incluso</h1>
+        <p><span id="destaque">clique</span> abaixo e adquira:</p>
+
+        </div>
+
+        <div class="divisao2">
+
+        <img id="img3" src="https://tse2.mm.bing.net/th/id/OIP.roelGNN_Y9LywuTTUGDeNAHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" title="Easy Pro2" alt="Opçao2 Earpods"></img> 
+        <h1>EasyPods 2.5</h1>
+        <p class="letragrossa"><span id="destaque">PROGRESSO</span> e <span id="destaque">AVANÇO</span></p>
+        <h1 class="h1menor">Versão completa</h1>
+        <p><span id="destaque">clique</span> abaixo e adquira:</p>
+
+        </div>
+
+        <div class="divisao3">
+
+        <img id="img1" src="https://techrecomenda.com/wp-content/uploads/2024/04/Design-sem-nome-2-12-1536x1024.jpg" title="Easy Pro2" alt="Opçao3 headset"></img> 
+        <h1>EasyHead 1</h1>
+        <p class="letragrossa"><span id="destaq">QUALIDADE</span> nos games</p>
+        <h1 class="h1menor">NOVIDADE!</h1>
+        <p><span id="destaque">clique</span> abaixo e adquira:</p>
+
+        </div>
+
+        
+        <a class="botao1" href="https://www.youtube.com/@Andrezitos">
+            <button id="botaobonito">MAIS DETALHES</button>
+        </a>
+
+        
+        <a class="botao2" href="https://www.youtube.com/gemaplys">
+            <button id="botaobonito">MAIS DETALHES</button>
+        </a>
+
+        
+        <a class="botao3" href="https://www.youtube.com/@jogandofoddaci">
+            <button id="botaobonito">MAIS DETALHES</button>
+        </a>
+
+
+    </body>
+</html>
