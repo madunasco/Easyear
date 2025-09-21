@@ -1,0 +1,254 @@
+/* --- Estilos Globais e Fontes --- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* --- Cabeçalho e Navegação --- */
+.cabecalho-principal {
+    width: 100%;
+    background-color: #fff; /* Fundo branco para o cabeçalho */
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.cabecalho-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px; /* Altura fixa para o cabeçalho */
+}
+
+.logo-imagem {
+    height: 15px; 
+    width: 98px;
+}
+
+.navegacao-principal a {
+    text-decoration: none;
+    color: #555;
+    margin-left: 25px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.navegacao-principal a:hover {
+    color: #007bff;
+}
+
+/* --- Seção de Destaque (Hero) --- */
+.secao-destaque {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 0;
+    position: relative;
+}
+
+.destaque-fundo-desfocado {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 400px;
+    height: 250px;
+    background: radial-gradient(circle, rgba(0,191,255,0.4) 0%, rgba(255,255,255,0) 70%);
+    filter: blur(50px);
+    z-index: -1;
+}
+
+.destaque-texto {
+    font-size: 64px;
+    font-weight: 700;
+    max-width: 250px;
+}
+
+.destaque-imagens-container {
+    position: relative;
+    width: 450px;
+    height: 250px;
+    margin: 0 40px;
+}
+
+.destaque-imagem-produto {
+    position: absolute;
+    max-width: 180px;
+    transition: transform 0.3s ease;
+}
+
+.img-preto {
+    z-index: 2;
+    left: 40px;
+    top: 30px;
+}
+
+.img-azul {
+    z-index: 3;
+    left: 50%;
+    transform: translateX(-50%) scale(1.2);
+    top: 0;
+}
+
+.img-branco {
+    z-index: 1;
+    right: 40px;
+    top: 30px;
+}
+
+.destaque-imagem-produto:hover {
+    transform: scale(1.1);
+}
+
+.img-azul:hover {
+    transform: translateX(-50%) scale(1.3);
+}
+
+.destaque-info-produto {
+    max-width: 280px;
+}
+
+.destaque-info-produto h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.destaque-info-produto .subtitulo {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 16px;
+}
+
+.destaque-info-produto .preco {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.destaque-info-produto .descricao {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 24px;
+}
+
+/* --- Botões --- */
+.botao {
+    display: block;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.botao-primario {
+    background-color: #e9ecef;
+    color: #333;
+}
+        
+.botao-secundario {
+    background-color: #fff;
+    color: #555;
+}
+
+/* --- Seção Slogan --- */
+.secao-slogan {
+    text-align: center;
+    padding: 40px 0;
+    margin: 40px 0;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.secao-slogan .texto-leve {
+    font-weight: 400;
+}
+
+/* --- Seção de Produtos --- */
+.secao-produtos {
+    padding: 40px 0;
+    border-top: 1px solid #e0e0e0;
+}
+
+.grade-produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.cartao-produto {
+    background-color: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+.cartao-produto img {
+    max-width: 100%;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.cartao-produto h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.cartao-produto .subtitulo {
+     font-size: 13px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.cartao-produto .preco {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.cartao-produto .descricao {
+    font-size: 11px;
+    color: #777;
+    margin-bottom: 20px;
+    min-height: 30px;
+}
+
+.opcoes-cor {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.ponto-cor {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+
+.ponto-cor.preto { background-color: #000; }
+.ponto-cor.branco { background-color: #f1f1f1; }
+.ponto-cor.azul { background-color: #007bff; }
